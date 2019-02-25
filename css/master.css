@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  color: blue; }
+
+.header {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  height: 90px; }
+
+.header #logo {
+  width: 300px;
+  background-image: url("../assets/Commish-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55%;
+  height: 90px; }
+
+.header .navigation {
+  width: calc(100% - 300px); }
+
+.header .navigation #navBar {
+  height: 50px;
+  margin-top: 40px;
+  background-color: white; }
+
+.header .navigation #navBar ul {
+  display: flex;
+  list-style: none; }
+
+.header .navigation #navBar ul li {
+  line-height: 50px;
+  padding: 0 20px;
+  font-family: "Open Sans"; }
+
+.header .navigation #navBar ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  transition: 500ms; }
+
+.header .navigation #navBar ul li a:hover {
+  color: black;
+  transition: 500ms; }
+
+@media screen and (max-width: 1080px) {
+  .header {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    height: 90px; }
+  .header #logo {
+    width: 100%;
+    background-image: url("../assets/Commish-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 90px;
+    border: none; }
+  .header .navigation {
+    opacity: 0;
+    transition: 500;
+    width: calc(100%);
+    background-color: white;
+    z-index: -10;
+    height: 100vh; }
+  .header .navigation ul {
+    flex-wrap: wrap; }
+  .header .navigation ul li {
+    width: 100%;
+    text-align: center; }
+  .header .active {
+    opacity: 1;
+    z-index: 100;
+    transition: 500; } }
+
+#firstContent {
+  width: 100%; }
+
+#firstContent h2 {
+  text-align: center;
+  font-family: "Open Sans";
+  margin: 30px 0;
+  color: black;
+  font-size: 50px;
+  font-weight: 500;
+  text-shadow: -3px 0 #3498db, 0 3px #3498db, 3px 0 #3498db, 0 -3px #3498db; }
+
+#firstContent .images {
+  display: flex;
+  justify-content: space-around; }
+
+#firstContent .images div {
+  height: 500px;
+  width: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#firstContent .buttons {
+  display: flex;
+  max-width: 90%;
+  justify-content: space-around;
+  margin: 30px auto; }
+
+#firstContent .buttons a {
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  width: 45%;
+  background-color: blue;
+  text-align: center;
+  color: white;
+  font-family: "Open Sans";
+  text-decoration: none;
+  font-size: 20px;
+  background-image: url("../assets/redfabric.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+@media screen and (max-width: 800px) {
+  #firstContent .buttons {
+    flex-wrap: wrap; }
+  #firstContent .buttons a {
+    width: 95%;
+    margin-bottom: 15px; } }
+
+#about h3 {
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  width: 100%;
+  background-color: #3498db;
+  text-align: center;
+  color: white;
+  font-family: "Open Sans";
+  text-decoration: none;
+  font-size: 20px;
+  background-size: contain;
+  background-repeat: repeat; }
+
+#about .content {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 55%;
+  margin-top: 15px;
+  justify-content: space-around; }
+
+#about .content div {
+  height: 300px;
+  width: 35%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#about .content p {
+  width: 55%;
+  font-family: "Open Sans";
+  letter-spacing: 1.5px;
+  line-height: 25px;
+  font-size: 17px; }
+
+footer {
+  text-align: Center;
+  color: black;
+  font-family: "Open Sans";
+  margin: 35px 0 10px 0;
+  width: 100%; }
+
+footer a, footer p {
+  text-align: center;
+  padding: 0 20px;
+  color: black;
+  text-decoration: none;
+  font-family: "Open Sans"; }
