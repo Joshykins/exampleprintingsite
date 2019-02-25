@@ -15,6 +15,7 @@ $color1:#3498db;
 
 $color2:#2ecc71;
 
+
 .header {
   display:flex;
   width:100%;
@@ -23,7 +24,7 @@ $color2:#2ecc71;
   height:$headerHeight;
   #logo {
     width:300px;
-    background-image:url('../assets/Commish-logo.png');
+    background-image:url('../assets/logo.jpg');
     background-repeat:no-repeat;
     background-position: center;
     background-size:55%;
